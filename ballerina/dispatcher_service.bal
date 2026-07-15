@@ -93,162 +93,162 @@ service class DispatcherService {
     }
 
     private function matchRemoteFunc(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForDelete(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForMeta(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForWorkflowDispatch(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForSecurityAndAnalysis(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForDeployKey(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForProjectColumn(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForMarketplacePurchase(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForBranchProtectionConfiguration(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForPullRequest(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForLabel(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForDeployment(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForTeamAdd(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForCodeScanningAlert(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForMembership(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForSecretScanningAlert(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForPush(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForMember(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForRepositoryDispatch(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForStatus(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForRepositoryImport(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForPersonalAccessTokenRequest(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForSubIssues(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForRepositoryRuleset(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForMilestone(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForPublic(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForWorkflowRun(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForProjectsV2statusUpdate(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForProjectsV2item(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForSponsorship(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForMergeGroup(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForProject(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForOrgBlock(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForSecretScanningAlertLocation(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForInstallationTarget(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForCheckSuite(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForPing(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForIssueComment(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForSecurityAdvisory(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForPackage(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForDiscussion(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForFork(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForPullRequestReview(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForOrganization(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForIssues(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForRegistryPackage(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForProjectsV2(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForRepositoryVulnerabilityAlert(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForStar(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForCreate(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForDeploymentReview(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForGollum(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForGithubAppAuthorization(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForWatch(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForTeam(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForWorkflowJob(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForRelease(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForInstallation(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForCommitComment(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForDiscussionComment(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForBranchProtectionRule(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForIssueDependencies(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForRepository(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForPullRequestReviewComment(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForDeploymentProtectionRule(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForCustomPropertyValues(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForInstallationRepositories(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForSecretScanningScan(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForProjectCard(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForCheckRun(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForPageBuild(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForCustomProperty(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForDependabotAlert(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForDeploymentStatus(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForRepositoryAdvisory(genericDataType, eventIdentifier, eventType);
-        log:printDebug("MATCH_LEVEL_1_ghtrigger_fresh_regen_v2", eventType = eventType);
+        log:printDebug("MATCH_LEVEL_1_github", eventType = eventType);
         check self.matchRemoteFuncForPullRequestReviewThread(genericDataType, eventIdentifier, eventType);
     }
 
     private function matchRemoteFuncForDelete(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "delete" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "delete");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "delete");
                 check self.executeRemoteFunc(genericDataType, "delete", "DeleteService", "onDelete");
             }
         }
@@ -257,7 +257,7 @@ service class DispatcherService {
     private function matchRemoteFuncForMeta(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "meta_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "meta_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "meta_deleted");
                 check self.executeRemoteFunc(genericDataType, "meta_deleted", "MetaService", "onMetaDeleted");
             }
         }
@@ -266,7 +266,7 @@ service class DispatcherService {
     private function matchRemoteFuncForWorkflowDispatch(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "workflow_dispatch" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "workflow_dispatch");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "workflow_dispatch");
                 check self.executeRemoteFunc(genericDataType, "workflow_dispatch", "WorkflowDispatchService", "onWorkflowDispatch");
             }
         }
@@ -275,7 +275,7 @@ service class DispatcherService {
     private function matchRemoteFuncForSecurityAndAnalysis(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "security_and_analysis" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "security_and_analysis");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "security_and_analysis");
                 check self.executeRemoteFunc(genericDataType, "security_and_analysis", "SecurityAndAnalysisService", "onSecurityAndAnalysis");
             }
         }
@@ -284,11 +284,11 @@ service class DispatcherService {
     private function matchRemoteFuncForDeployKey(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "deploy_key_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "deploy_key_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "deploy_key_created");
                 check self.executeRemoteFunc(genericDataType, "deploy_key_created", "DeployKeyService", "onDeployKeyCreated");
             }
             "deploy_key_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "deploy_key_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "deploy_key_deleted");
                 check self.executeRemoteFunc(genericDataType, "deploy_key_deleted", "DeployKeyService", "onDeployKeyDeleted");
             }
         }
@@ -297,19 +297,19 @@ service class DispatcherService {
     private function matchRemoteFuncForProjectColumn(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "project_column_moved" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "project_column_moved");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "project_column_moved");
                 check self.executeRemoteFunc(genericDataType, "project_column_moved", "ProjectColumnService", "onProjectColumnMoved");
             }
             "project_column_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "project_column_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "project_column_edited");
                 check self.executeRemoteFunc(genericDataType, "project_column_edited", "ProjectColumnService", "onProjectColumnEdited");
             }
             "project_column_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "project_column_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "project_column_deleted");
                 check self.executeRemoteFunc(genericDataType, "project_column_deleted", "ProjectColumnService", "onProjectColumnDeleted");
             }
             "project_column_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "project_column_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "project_column_created");
                 check self.executeRemoteFunc(genericDataType, "project_column_created", "ProjectColumnService", "onProjectColumnCreated");
             }
         }
@@ -318,23 +318,23 @@ service class DispatcherService {
     private function matchRemoteFuncForMarketplacePurchase(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "marketplace_purchase_purchased" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "marketplace_purchase_purchased");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "marketplace_purchase_purchased");
                 check self.executeRemoteFunc(genericDataType, "marketplace_purchase_purchased", "MarketplacePurchaseService", "onMarketplacePurchasePurchased");
             }
             "marketplace_purchase_cancelled" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "marketplace_purchase_cancelled");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "marketplace_purchase_cancelled");
                 check self.executeRemoteFunc(genericDataType, "marketplace_purchase_cancelled", "MarketplacePurchaseService", "onMarketplacePurchaseCancelled");
             }
             "marketplace_purchase_pending_change_cancelled" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "marketplace_purchase_pending_change_cancelled");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "marketplace_purchase_pending_change_cancelled");
                 check self.executeRemoteFunc(genericDataType, "marketplace_purchase_pending_change_cancelled", "MarketplacePurchaseService", "onMarketplacePurchasePendingChangeCancelled");
             }
             "marketplace_purchase_pending_change" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "marketplace_purchase_pending_change");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "marketplace_purchase_pending_change");
                 check self.executeRemoteFunc(genericDataType, "marketplace_purchase_pending_change", "MarketplacePurchaseService", "onMarketplacePurchasePendingChange");
             }
             "marketplace_purchase_changed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "marketplace_purchase_changed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "marketplace_purchase_changed");
                 check self.executeRemoteFunc(genericDataType, "marketplace_purchase_changed", "MarketplacePurchaseService", "onMarketplacePurchaseChanged");
             }
         }
@@ -343,11 +343,11 @@ service class DispatcherService {
     private function matchRemoteFuncForBranchProtectionConfiguration(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "branch_protection_configuration_enabled" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "branch_protection_configuration_enabled");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "branch_protection_configuration_enabled");
                 check self.executeRemoteFunc(genericDataType, "branch_protection_configuration_enabled", "BranchProtectionConfigurationService", "onBranchProtectionConfigurationEnabled");
             }
             "branch_protection_configuration_disabled" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "branch_protection_configuration_disabled");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "branch_protection_configuration_disabled");
                 check self.executeRemoteFunc(genericDataType, "branch_protection_configuration_disabled", "BranchProtectionConfigurationService", "onBranchProtectionConfigurationDisabled");
             }
         }
@@ -356,87 +356,87 @@ service class DispatcherService {
     private function matchRemoteFuncForPullRequest(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "pull_request_enqueued" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_enqueued");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_enqueued");
                 check self.executeRemoteFunc(genericDataType, "pull_request_enqueued", "PullRequestService", "onPullRequestEnqueued");
             }
             "pull_request_review_request_removed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_review_request_removed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_review_request_removed");
                 check self.executeRemoteFunc(genericDataType, "pull_request_review_request_removed", "PullRequestService", "onPullRequestReviewRequestRemoved");
             }
             "pull_request_opened" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_opened");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_opened");
                 check self.executeRemoteFunc(genericDataType, "pull_request_opened", "PullRequestService", "onPullRequestOpened");
             }
             "pull_request_ready_for_review" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_ready_for_review");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_ready_for_review");
                 check self.executeRemoteFunc(genericDataType, "pull_request_ready_for_review", "PullRequestService", "onPullRequestReadyForReview");
             }
             "pull_request_labeled" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_labeled");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_labeled");
                 check self.executeRemoteFunc(genericDataType, "pull_request_labeled", "PullRequestService", "onPullRequestLabeled");
             }
             "pull_request_unassigned" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_unassigned");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_unassigned");
                 check self.executeRemoteFunc(genericDataType, "pull_request_unassigned", "PullRequestService", "onPullRequestUnassigned");
             }
             "pull_request_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_edited");
                 check self.executeRemoteFunc(genericDataType, "pull_request_edited", "PullRequestService", "onPullRequestEdited");
             }
             "pull_request_synchronize" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_synchronize");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_synchronize");
                 check self.executeRemoteFunc(genericDataType, "pull_request_synchronize", "PullRequestService", "onPullRequestSynchronize");
             }
             "pull_request_review_requested" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_review_requested");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_review_requested");
                 check self.executeRemoteFunc(genericDataType, "pull_request_review_requested", "PullRequestService", "onPullRequestReviewRequested");
             }
             "pull_request_reopened" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_reopened");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_reopened");
                 check self.executeRemoteFunc(genericDataType, "pull_request_reopened", "PullRequestService", "onPullRequestReopened");
             }
             "pull_request_auto_merge_disabled" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_auto_merge_disabled");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_auto_merge_disabled");
                 check self.executeRemoteFunc(genericDataType, "pull_request_auto_merge_disabled", "PullRequestService", "onPullRequestAutoMergeDisabled");
             }
             "pull_request_locked" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_locked");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_locked");
                 check self.executeRemoteFunc(genericDataType, "pull_request_locked", "PullRequestService", "onPullRequestLocked");
             }
             "pull_request_auto_merge_enabled" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_auto_merge_enabled");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_auto_merge_enabled");
                 check self.executeRemoteFunc(genericDataType, "pull_request_auto_merge_enabled", "PullRequestService", "onPullRequestAutoMergeEnabled");
             }
             "pull_request_milestoned" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_milestoned");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_milestoned");
                 check self.executeRemoteFunc(genericDataType, "pull_request_milestoned", "PullRequestService", "onPullRequestMilestoned");
             }
             "pull_request_dequeued" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_dequeued");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_dequeued");
                 check self.executeRemoteFunc(genericDataType, "pull_request_dequeued", "PullRequestService", "onPullRequestDequeued");
             }
             "pull_request_unlabeled" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_unlabeled");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_unlabeled");
                 check self.executeRemoteFunc(genericDataType, "pull_request_unlabeled", "PullRequestService", "onPullRequestUnlabeled");
             }
             "pull_request_closed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_closed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_closed");
                 check self.executeRemoteFunc(genericDataType, "pull_request_closed", "PullRequestService", "onPullRequestClosed");
             }
             "pull_request_unlocked" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_unlocked");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_unlocked");
                 check self.executeRemoteFunc(genericDataType, "pull_request_unlocked", "PullRequestService", "onPullRequestUnlocked");
             }
             "pull_request_assigned" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_assigned");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_assigned");
                 check self.executeRemoteFunc(genericDataType, "pull_request_assigned", "PullRequestService", "onPullRequestAssigned");
             }
             "pull_request_converted_to_draft" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_converted_to_draft");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_converted_to_draft");
                 check self.executeRemoteFunc(genericDataType, "pull_request_converted_to_draft", "PullRequestService", "onPullRequestConvertedToDraft");
             }
             "pull_request_demilestoned" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_demilestoned");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_demilestoned");
                 check self.executeRemoteFunc(genericDataType, "pull_request_demilestoned", "PullRequestService", "onPullRequestDemilestoned");
             }
         }
@@ -445,15 +445,15 @@ service class DispatcherService {
     private function matchRemoteFuncForLabel(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "label_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "label_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "label_edited");
                 check self.executeRemoteFunc(genericDataType, "label_edited", "LabelService", "onLabelEdited");
             }
             "label_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "label_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "label_created");
                 check self.executeRemoteFunc(genericDataType, "label_created", "LabelService", "onLabelCreated");
             }
             "label_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "label_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "label_deleted");
                 check self.executeRemoteFunc(genericDataType, "label_deleted", "LabelService", "onLabelDeleted");
             }
         }
@@ -462,7 +462,7 @@ service class DispatcherService {
     private function matchRemoteFuncForDeployment(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "deployment_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "deployment_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "deployment_created");
                 check self.executeRemoteFunc(genericDataType, "deployment_created", "DeploymentService", "onDeploymentCreated");
             }
         }
@@ -471,7 +471,7 @@ service class DispatcherService {
     private function matchRemoteFuncForTeamAdd(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "team_add" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "team_add");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "team_add");
                 check self.executeRemoteFunc(genericDataType, "team_add", "TeamAddService", "onTeamAdd");
             }
         }
@@ -480,31 +480,31 @@ service class DispatcherService {
     private function matchRemoteFuncForCodeScanningAlert(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "code_scanning_alert_appeared_in_branch" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "code_scanning_alert_appeared_in_branch");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "code_scanning_alert_appeared_in_branch");
                 check self.executeRemoteFunc(genericDataType, "code_scanning_alert_appeared_in_branch", "CodeScanningAlertService", "onCodeScanningAlertAppearedInBranch");
             }
             "code_scanning_alert_closed_by_user" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "code_scanning_alert_closed_by_user");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "code_scanning_alert_closed_by_user");
                 check self.executeRemoteFunc(genericDataType, "code_scanning_alert_closed_by_user", "CodeScanningAlertService", "onCodeScanningAlertClosedByUser");
             }
             "code_scanning_alert_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "code_scanning_alert_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "code_scanning_alert_created");
                 check self.executeRemoteFunc(genericDataType, "code_scanning_alert_created", "CodeScanningAlertService", "onCodeScanningAlertCreated");
             }
             "code_scanning_alert_fixed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "code_scanning_alert_fixed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "code_scanning_alert_fixed");
                 check self.executeRemoteFunc(genericDataType, "code_scanning_alert_fixed", "CodeScanningAlertService", "onCodeScanningAlertFixed");
             }
             "code_scanning_alert_reopened" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "code_scanning_alert_reopened");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "code_scanning_alert_reopened");
                 check self.executeRemoteFunc(genericDataType, "code_scanning_alert_reopened", "CodeScanningAlertService", "onCodeScanningAlertReopened");
             }
             "code_scanning_alert_reopened_by_user" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "code_scanning_alert_reopened_by_user");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "code_scanning_alert_reopened_by_user");
                 check self.executeRemoteFunc(genericDataType, "code_scanning_alert_reopened_by_user", "CodeScanningAlertService", "onCodeScanningAlertReopenedByUser");
             }
             "code_scanning_alert_updated_assignment" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "code_scanning_alert_updated_assignment");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "code_scanning_alert_updated_assignment");
                 check self.executeRemoteFunc(genericDataType, "code_scanning_alert_updated_assignment", "CodeScanningAlertService", "onCodeScanningAlertUpdatedAssignment");
             }
         }
@@ -513,11 +513,11 @@ service class DispatcherService {
     private function matchRemoteFuncForMembership(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "membership_added" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "membership_added");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "membership_added");
                 check self.executeRemoteFunc(genericDataType, "membership_added", "MembershipService", "onMembershipAdded");
             }
             "membership_removed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "membership_removed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "membership_removed");
                 check self.executeRemoteFunc(genericDataType, "membership_removed", "MembershipService", "onMembershipRemoved");
             }
         }
@@ -526,31 +526,31 @@ service class DispatcherService {
     private function matchRemoteFuncForSecretScanningAlert(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "secret_scanning_alert_assigned" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "secret_scanning_alert_assigned");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "secret_scanning_alert_assigned");
                 check self.executeRemoteFunc(genericDataType, "secret_scanning_alert_assigned", "SecretScanningAlertService", "onSecretScanningAlertAssigned");
             }
             "secret_scanning_alert_reopened" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "secret_scanning_alert_reopened");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "secret_scanning_alert_reopened");
                 check self.executeRemoteFunc(genericDataType, "secret_scanning_alert_reopened", "SecretScanningAlertService", "onSecretScanningAlertReopened");
             }
             "secret_scanning_alert_unassigned" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "secret_scanning_alert_unassigned");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "secret_scanning_alert_unassigned");
                 check self.executeRemoteFunc(genericDataType, "secret_scanning_alert_unassigned", "SecretScanningAlertService", "onSecretScanningAlertUnassigned");
             }
             "secret_scanning_alert_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "secret_scanning_alert_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "secret_scanning_alert_created");
                 check self.executeRemoteFunc(genericDataType, "secret_scanning_alert_created", "SecretScanningAlertService", "onSecretScanningAlertCreated");
             }
             "secret_scanning_alert_publicly_leaked" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "secret_scanning_alert_publicly_leaked");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "secret_scanning_alert_publicly_leaked");
                 check self.executeRemoteFunc(genericDataType, "secret_scanning_alert_publicly_leaked", "SecretScanningAlertService", "onSecretScanningAlertPubliclyLeaked");
             }
             "secret_scanning_alert_validated" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "secret_scanning_alert_validated");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "secret_scanning_alert_validated");
                 check self.executeRemoteFunc(genericDataType, "secret_scanning_alert_validated", "SecretScanningAlertService", "onSecretScanningAlertValidated");
             }
             "secret_scanning_alert_resolved" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "secret_scanning_alert_resolved");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "secret_scanning_alert_resolved");
                 check self.executeRemoteFunc(genericDataType, "secret_scanning_alert_resolved", "SecretScanningAlertService", "onSecretScanningAlertResolved");
             }
         }
@@ -559,7 +559,7 @@ service class DispatcherService {
     private function matchRemoteFuncForPush(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "push" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "push");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "push");
                 check self.executeRemoteFunc(genericDataType, "push", "PushService", "onPush");
             }
         }
@@ -568,15 +568,15 @@ service class DispatcherService {
     private function matchRemoteFuncForMember(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "member_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "member_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "member_edited");
                 check self.executeRemoteFunc(genericDataType, "member_edited", "MemberService", "onMemberEdited");
             }
             "member_added" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "member_added");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "member_added");
                 check self.executeRemoteFunc(genericDataType, "member_added", "MemberService", "onMemberAdded");
             }
             "member_removed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "member_removed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "member_removed");
                 check self.executeRemoteFunc(genericDataType, "member_removed", "MemberService", "onMemberRemoved");
             }
         }
@@ -585,7 +585,7 @@ service class DispatcherService {
     private function matchRemoteFuncForRepositoryDispatch(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventType {
             "repository_dispatch" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "repository_dispatch");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "repository_dispatch");
                 check self.executeRemoteFunc(genericDataType, "repository_dispatch", "RepositoryDispatchService", "onRepositoryDispatch");
             }
         }
@@ -594,7 +594,7 @@ service class DispatcherService {
     private function matchRemoteFuncForStatus(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "status" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "status");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "status");
                 check self.executeRemoteFunc(genericDataType, "status", "StatusService", "onStatus");
             }
         }
@@ -603,7 +603,7 @@ service class DispatcherService {
     private function matchRemoteFuncForRepositoryImport(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "repository_import" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "repository_import");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "repository_import");
                 check self.executeRemoteFunc(genericDataType, "repository_import", "RepositoryImportService", "onRepositoryImport");
             }
         }
@@ -612,19 +612,19 @@ service class DispatcherService {
     private function matchRemoteFuncForPersonalAccessTokenRequest(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "personal_access_token_request_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "personal_access_token_request_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "personal_access_token_request_created");
                 check self.executeRemoteFunc(genericDataType, "personal_access_token_request_created", "PersonalAccessTokenRequestService", "onPersonalAccessTokenRequestCreated");
             }
             "personal_access_token_request_approved" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "personal_access_token_request_approved");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "personal_access_token_request_approved");
                 check self.executeRemoteFunc(genericDataType, "personal_access_token_request_approved", "PersonalAccessTokenRequestService", "onPersonalAccessTokenRequestApproved");
             }
             "personal_access_token_request_denied" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "personal_access_token_request_denied");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "personal_access_token_request_denied");
                 check self.executeRemoteFunc(genericDataType, "personal_access_token_request_denied", "PersonalAccessTokenRequestService", "onPersonalAccessTokenRequestDenied");
             }
             "personal_access_token_request_cancelled" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "personal_access_token_request_cancelled");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "personal_access_token_request_cancelled");
                 check self.executeRemoteFunc(genericDataType, "personal_access_token_request_cancelled", "PersonalAccessTokenRequestService", "onPersonalAccessTokenRequestCancelled");
             }
         }
@@ -633,19 +633,19 @@ service class DispatcherService {
     private function matchRemoteFuncForSubIssues(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "sub_issues_sub_issue_added" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "sub_issues_sub_issue_added");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "sub_issues_sub_issue_added");
                 check self.executeRemoteFunc(genericDataType, "sub_issues_sub_issue_added", "SubIssuesService", "onSubIssuesSubIssueAdded");
             }
             "sub_issues_parent_issue_added" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "sub_issues_parent_issue_added");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "sub_issues_parent_issue_added");
                 check self.executeRemoteFunc(genericDataType, "sub_issues_parent_issue_added", "SubIssuesService", "onSubIssuesParentIssueAdded");
             }
             "sub_issues_sub_issue_removed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "sub_issues_sub_issue_removed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "sub_issues_sub_issue_removed");
                 check self.executeRemoteFunc(genericDataType, "sub_issues_sub_issue_removed", "SubIssuesService", "onSubIssuesSubIssueRemoved");
             }
             "sub_issues_parent_issue_removed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "sub_issues_parent_issue_removed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "sub_issues_parent_issue_removed");
                 check self.executeRemoteFunc(genericDataType, "sub_issues_parent_issue_removed", "SubIssuesService", "onSubIssuesParentIssueRemoved");
             }
         }
@@ -654,15 +654,15 @@ service class DispatcherService {
     private function matchRemoteFuncForRepositoryRuleset(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "repository_ruleset_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "repository_ruleset_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "repository_ruleset_created");
                 check self.executeRemoteFunc(genericDataType, "repository_ruleset_created", "RepositoryRulesetService", "onRepositoryRulesetCreated");
             }
             "repository_ruleset_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "repository_ruleset_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "repository_ruleset_edited");
                 check self.executeRemoteFunc(genericDataType, "repository_ruleset_edited", "RepositoryRulesetService", "onRepositoryRulesetEdited");
             }
             "repository_ruleset_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "repository_ruleset_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "repository_ruleset_deleted");
                 check self.executeRemoteFunc(genericDataType, "repository_ruleset_deleted", "RepositoryRulesetService", "onRepositoryRulesetDeleted");
             }
         }
@@ -671,23 +671,23 @@ service class DispatcherService {
     private function matchRemoteFuncForMilestone(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "milestone_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "milestone_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "milestone_created");
                 check self.executeRemoteFunc(genericDataType, "milestone_created", "MilestoneService", "onMilestoneCreated");
             }
             "milestone_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "milestone_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "milestone_edited");
                 check self.executeRemoteFunc(genericDataType, "milestone_edited", "MilestoneService", "onMilestoneEdited");
             }
             "milestone_opened" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "milestone_opened");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "milestone_opened");
                 check self.executeRemoteFunc(genericDataType, "milestone_opened", "MilestoneService", "onMilestoneOpened");
             }
             "milestone_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "milestone_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "milestone_deleted");
                 check self.executeRemoteFunc(genericDataType, "milestone_deleted", "MilestoneService", "onMilestoneDeleted");
             }
             "milestone_closed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "milestone_closed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "milestone_closed");
                 check self.executeRemoteFunc(genericDataType, "milestone_closed", "MilestoneService", "onMilestoneClosed");
             }
         }
@@ -696,7 +696,7 @@ service class DispatcherService {
     private function matchRemoteFuncForPublic(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "public" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "public");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "public");
                 check self.executeRemoteFunc(genericDataType, "public", "PublicService", "onPublic");
             }
         }
@@ -705,15 +705,15 @@ service class DispatcherService {
     private function matchRemoteFuncForWorkflowRun(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "workflow_run_in_progress" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "workflow_run_in_progress");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "workflow_run_in_progress");
                 check self.executeRemoteFunc(genericDataType, "workflow_run_in_progress", "WorkflowRunService", "onWorkflowRunInProgress");
             }
             "workflow_run_completed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "workflow_run_completed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "workflow_run_completed");
                 check self.executeRemoteFunc(genericDataType, "workflow_run_completed", "WorkflowRunService", "onWorkflowRunCompleted");
             }
             "workflow_run_requested" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "workflow_run_requested");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "workflow_run_requested");
                 check self.executeRemoteFunc(genericDataType, "workflow_run_requested", "WorkflowRunService", "onWorkflowRunRequested");
             }
         }
@@ -722,15 +722,15 @@ service class DispatcherService {
     private function matchRemoteFuncForProjectsV2statusUpdate(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "projects_v2_status_update_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "projects_v2_status_update_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "projects_v2_status_update_edited");
                 check self.executeRemoteFunc(genericDataType, "projects_v2_status_update_edited", "ProjectsV2statusUpdateService", "onProjectsV2StatusUpdateEdited");
             }
             "projects_v2_status_update_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "projects_v2_status_update_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "projects_v2_status_update_deleted");
                 check self.executeRemoteFunc(genericDataType, "projects_v2_status_update_deleted", "ProjectsV2statusUpdateService", "onProjectsV2StatusUpdateDeleted");
             }
             "projects_v2_status_update_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "projects_v2_status_update_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "projects_v2_status_update_created");
                 check self.executeRemoteFunc(genericDataType, "projects_v2_status_update_created", "ProjectsV2statusUpdateService", "onProjectsV2StatusUpdateCreated");
             }
         }
@@ -739,31 +739,31 @@ service class DispatcherService {
     private function matchRemoteFuncForProjectsV2item(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "projects_v2_item_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "projects_v2_item_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "projects_v2_item_edited");
                 check self.executeRemoteFunc(genericDataType, "projects_v2_item_edited", "ProjectsV2itemService", "onProjectsV2ItemEdited");
             }
             "projects_v2_item_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "projects_v2_item_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "projects_v2_item_created");
                 check self.executeRemoteFunc(genericDataType, "projects_v2_item_created", "ProjectsV2itemService", "onProjectsV2ItemCreated");
             }
             "projects_v2_item_archived" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "projects_v2_item_archived");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "projects_v2_item_archived");
                 check self.executeRemoteFunc(genericDataType, "projects_v2_item_archived", "ProjectsV2itemService", "onProjectsV2ItemArchived");
             }
             "projects_v2_item_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "projects_v2_item_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "projects_v2_item_deleted");
                 check self.executeRemoteFunc(genericDataType, "projects_v2_item_deleted", "ProjectsV2itemService", "onProjectsV2ItemDeleted");
             }
             "projects_v2_item_restored" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "projects_v2_item_restored");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "projects_v2_item_restored");
                 check self.executeRemoteFunc(genericDataType, "projects_v2_item_restored", "ProjectsV2itemService", "onProjectsV2ItemRestored");
             }
             "projects_v2_item_reordered" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "projects_v2_item_reordered");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "projects_v2_item_reordered");
                 check self.executeRemoteFunc(genericDataType, "projects_v2_item_reordered", "ProjectsV2itemService", "onProjectsV2ItemReordered");
             }
             "projects_v2_item_converted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "projects_v2_item_converted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "projects_v2_item_converted");
                 check self.executeRemoteFunc(genericDataType, "projects_v2_item_converted", "ProjectsV2itemService", "onProjectsV2ItemConverted");
             }
         }
@@ -772,27 +772,27 @@ service class DispatcherService {
     private function matchRemoteFuncForSponsorship(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "sponsorship_cancelled" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "sponsorship_cancelled");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "sponsorship_cancelled");
                 check self.executeRemoteFunc(genericDataType, "sponsorship_cancelled", "SponsorshipService", "onSponsorshipCancelled");
             }
             "sponsorship_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "sponsorship_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "sponsorship_edited");
                 check self.executeRemoteFunc(genericDataType, "sponsorship_edited", "SponsorshipService", "onSponsorshipEdited");
             }
             "sponsorship_tier_changed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "sponsorship_tier_changed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "sponsorship_tier_changed");
                 check self.executeRemoteFunc(genericDataType, "sponsorship_tier_changed", "SponsorshipService", "onSponsorshipTierChanged");
             }
             "sponsorship_pending_cancellation" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "sponsorship_pending_cancellation");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "sponsorship_pending_cancellation");
                 check self.executeRemoteFunc(genericDataType, "sponsorship_pending_cancellation", "SponsorshipService", "onSponsorshipPendingCancellation");
             }
             "sponsorship_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "sponsorship_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "sponsorship_created");
                 check self.executeRemoteFunc(genericDataType, "sponsorship_created", "SponsorshipService", "onSponsorshipCreated");
             }
             "sponsorship_pending_tier_change" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "sponsorship_pending_tier_change");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "sponsorship_pending_tier_change");
                 check self.executeRemoteFunc(genericDataType, "sponsorship_pending_tier_change", "SponsorshipService", "onSponsorshipPendingTierChange");
             }
         }
@@ -801,11 +801,11 @@ service class DispatcherService {
     private function matchRemoteFuncForMergeGroup(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "merge_group_destroyed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "merge_group_destroyed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "merge_group_destroyed");
                 check self.executeRemoteFunc(genericDataType, "merge_group_destroyed", "MergeGroupService", "onMergeGroupDestroyed");
             }
             "merge_group_checks_requested" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "merge_group_checks_requested");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "merge_group_checks_requested");
                 check self.executeRemoteFunc(genericDataType, "merge_group_checks_requested", "MergeGroupService", "onMergeGroupChecksRequested");
             }
         }
@@ -814,23 +814,23 @@ service class DispatcherService {
     private function matchRemoteFuncForProject(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "project_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "project_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "project_deleted");
                 check self.executeRemoteFunc(genericDataType, "project_deleted", "ProjectService", "onProjectDeleted");
             }
             "project_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "project_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "project_created");
                 check self.executeRemoteFunc(genericDataType, "project_created", "ProjectService", "onProjectCreated");
             }
             "project_closed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "project_closed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "project_closed");
                 check self.executeRemoteFunc(genericDataType, "project_closed", "ProjectService", "onProjectClosed");
             }
             "project_reopened" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "project_reopened");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "project_reopened");
                 check self.executeRemoteFunc(genericDataType, "project_reopened", "ProjectService", "onProjectReopened");
             }
             "project_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "project_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "project_edited");
                 check self.executeRemoteFunc(genericDataType, "project_edited", "ProjectService", "onProjectEdited");
             }
         }
@@ -839,11 +839,11 @@ service class DispatcherService {
     private function matchRemoteFuncForOrgBlock(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "org_block_blocked" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "org_block_blocked");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "org_block_blocked");
                 check self.executeRemoteFunc(genericDataType, "org_block_blocked", "OrgBlockService", "onOrgBlockBlocked");
             }
             "org_block_unblocked" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "org_block_unblocked");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "org_block_unblocked");
                 check self.executeRemoteFunc(genericDataType, "org_block_unblocked", "OrgBlockService", "onOrgBlockUnblocked");
             }
         }
@@ -852,7 +852,7 @@ service class DispatcherService {
     private function matchRemoteFuncForSecretScanningAlertLocation(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "secret_scanning_alert_location" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "secret_scanning_alert_location");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "secret_scanning_alert_location");
                 check self.executeRemoteFunc(genericDataType, "secret_scanning_alert_location", "SecretScanningAlertLocationService", "onSecretScanningAlertLocation");
             }
         }
@@ -861,7 +861,7 @@ service class DispatcherService {
     private function matchRemoteFuncForInstallationTarget(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "installation_target_renamed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "installation_target_renamed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "installation_target_renamed");
                 check self.executeRemoteFunc(genericDataType, "installation_target_renamed", "InstallationTargetService", "onInstallationTargetRenamed");
             }
         }
@@ -870,15 +870,15 @@ service class DispatcherService {
     private function matchRemoteFuncForCheckSuite(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "check_suite_completed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "check_suite_completed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "check_suite_completed");
                 check self.executeRemoteFunc(genericDataType, "check_suite_completed", "CheckSuiteService", "onCheckSuiteCompleted");
             }
             "check_suite_requested" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "check_suite_requested");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "check_suite_requested");
                 check self.executeRemoteFunc(genericDataType, "check_suite_requested", "CheckSuiteService", "onCheckSuiteRequested");
             }
             "check_suite_rerequested" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "check_suite_rerequested");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "check_suite_rerequested");
                 check self.executeRemoteFunc(genericDataType, "check_suite_rerequested", "CheckSuiteService", "onCheckSuiteRerequested");
             }
         }
@@ -887,7 +887,7 @@ service class DispatcherService {
     private function matchRemoteFuncForPing(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "ping" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "ping");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "ping");
                 check self.executeRemoteFunc(genericDataType, "ping", "PingService", "onPing");
             }
         }
@@ -896,23 +896,23 @@ service class DispatcherService {
     private function matchRemoteFuncForIssueComment(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "issue_comment_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issue_comment_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issue_comment_edited");
                 check self.executeRemoteFunc(genericDataType, "issue_comment_edited", "IssueCommentService", "onIssueCommentEdited");
             }
             "issue_comment_pinned" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issue_comment_pinned");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issue_comment_pinned");
                 check self.executeRemoteFunc(genericDataType, "issue_comment_pinned", "IssueCommentService", "onIssueCommentPinned");
             }
             "issue_comment_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issue_comment_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issue_comment_deleted");
                 check self.executeRemoteFunc(genericDataType, "issue_comment_deleted", "IssueCommentService", "onIssueCommentDeleted");
             }
             "issue_comment_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issue_comment_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issue_comment_created");
                 check self.executeRemoteFunc(genericDataType, "issue_comment_created", "IssueCommentService", "onIssueCommentCreated");
             }
             "issue_comment_unpinned" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issue_comment_unpinned");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issue_comment_unpinned");
                 check self.executeRemoteFunc(genericDataType, "issue_comment_unpinned", "IssueCommentService", "onIssueCommentUnpinned");
             }
         }
@@ -921,15 +921,15 @@ service class DispatcherService {
     private function matchRemoteFuncForSecurityAdvisory(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "security_advisory_withdrawn" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "security_advisory_withdrawn");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "security_advisory_withdrawn");
                 check self.executeRemoteFunc(genericDataType, "security_advisory_withdrawn", "SecurityAdvisoryService", "onSecurityAdvisoryWithdrawn");
             }
             "security_advisory_published" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "security_advisory_published");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "security_advisory_published");
                 check self.executeRemoteFunc(genericDataType, "security_advisory_published", "SecurityAdvisoryService", "onSecurityAdvisoryPublished");
             }
             "security_advisory_updated" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "security_advisory_updated");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "security_advisory_updated");
                 check self.executeRemoteFunc(genericDataType, "security_advisory_updated", "SecurityAdvisoryService", "onSecurityAdvisoryUpdated");
             }
         }
@@ -938,11 +938,11 @@ service class DispatcherService {
     private function matchRemoteFuncForPackage(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "package_published" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "package_published");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "package_published");
                 check self.executeRemoteFunc(genericDataType, "package_published", "PackageService", "onPackagePublished");
             }
             "package_updated" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "package_updated");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "package_updated");
                 check self.executeRemoteFunc(genericDataType, "package_updated", "PackageService", "onPackageUpdated");
             }
         }
@@ -951,63 +951,63 @@ service class DispatcherService {
     private function matchRemoteFuncForDiscussion(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "discussion_unanswered" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "discussion_unanswered");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "discussion_unanswered");
                 check self.executeRemoteFunc(genericDataType, "discussion_unanswered", "DiscussionService", "onDiscussionUnanswered");
             }
             "discussion_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "discussion_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "discussion_created");
                 check self.executeRemoteFunc(genericDataType, "discussion_created", "DiscussionService", "onDiscussionCreated");
             }
             "discussion_transferred" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "discussion_transferred");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "discussion_transferred");
                 check self.executeRemoteFunc(genericDataType, "discussion_transferred", "DiscussionService", "onDiscussionTransferred");
             }
             "discussion_category_changed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "discussion_category_changed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "discussion_category_changed");
                 check self.executeRemoteFunc(genericDataType, "discussion_category_changed", "DiscussionService", "onDiscussionCategoryChanged");
             }
             "discussion_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "discussion_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "discussion_deleted");
                 check self.executeRemoteFunc(genericDataType, "discussion_deleted", "DiscussionService", "onDiscussionDeleted");
             }
             "discussion_unlocked" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "discussion_unlocked");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "discussion_unlocked");
                 check self.executeRemoteFunc(genericDataType, "discussion_unlocked", "DiscussionService", "onDiscussionUnlocked");
             }
             "discussion_pinned" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "discussion_pinned");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "discussion_pinned");
                 check self.executeRemoteFunc(genericDataType, "discussion_pinned", "DiscussionService", "onDiscussionPinned");
             }
             "discussion_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "discussion_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "discussion_edited");
                 check self.executeRemoteFunc(genericDataType, "discussion_edited", "DiscussionService", "onDiscussionEdited");
             }
             "discussion_reopened" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "discussion_reopened");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "discussion_reopened");
                 check self.executeRemoteFunc(genericDataType, "discussion_reopened", "DiscussionService", "onDiscussionReopened");
             }
             "discussion_answered" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "discussion_answered");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "discussion_answered");
                 check self.executeRemoteFunc(genericDataType, "discussion_answered", "DiscussionService", "onDiscussionAnswered");
             }
             "discussion_closed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "discussion_closed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "discussion_closed");
                 check self.executeRemoteFunc(genericDataType, "discussion_closed", "DiscussionService", "onDiscussionClosed");
             }
             "discussion_unlabeled" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "discussion_unlabeled");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "discussion_unlabeled");
                 check self.executeRemoteFunc(genericDataType, "discussion_unlabeled", "DiscussionService", "onDiscussionUnlabeled");
             }
             "discussion_labeled" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "discussion_labeled");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "discussion_labeled");
                 check self.executeRemoteFunc(genericDataType, "discussion_labeled", "DiscussionService", "onDiscussionLabeled");
             }
             "discussion_unpinned" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "discussion_unpinned");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "discussion_unpinned");
                 check self.executeRemoteFunc(genericDataType, "discussion_unpinned", "DiscussionService", "onDiscussionUnpinned");
             }
             "discussion_locked" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "discussion_locked");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "discussion_locked");
                 check self.executeRemoteFunc(genericDataType, "discussion_locked", "DiscussionService", "onDiscussionLocked");
             }
         }
@@ -1016,7 +1016,7 @@ service class DispatcherService {
     private function matchRemoteFuncForFork(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "fork" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "fork");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "fork");
                 check self.executeRemoteFunc(genericDataType, "fork", "ForkService", "onFork");
             }
         }
@@ -1025,15 +1025,15 @@ service class DispatcherService {
     private function matchRemoteFuncForPullRequestReview(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "pull_request_review_submitted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_review_submitted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_review_submitted");
                 check self.executeRemoteFunc(genericDataType, "pull_request_review_submitted", "PullRequestReviewService", "onPullRequestReviewSubmitted");
             }
             "pull_request_review_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_review_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_review_edited");
                 check self.executeRemoteFunc(genericDataType, "pull_request_review_edited", "PullRequestReviewService", "onPullRequestReviewEdited");
             }
             "pull_request_review_dismissed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_review_dismissed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_review_dismissed");
                 check self.executeRemoteFunc(genericDataType, "pull_request_review_dismissed", "PullRequestReviewService", "onPullRequestReviewDismissed");
             }
         }
@@ -1042,23 +1042,23 @@ service class DispatcherService {
     private function matchRemoteFuncForOrganization(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "organization_member_added" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "organization_member_added");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "organization_member_added");
                 check self.executeRemoteFunc(genericDataType, "organization_member_added", "OrganizationService", "onOrganizationMemberAdded");
             }
             "organization_member_removed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "organization_member_removed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "organization_member_removed");
                 check self.executeRemoteFunc(genericDataType, "organization_member_removed", "OrganizationService", "onOrganizationMemberRemoved");
             }
             "organization_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "organization_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "organization_deleted");
                 check self.executeRemoteFunc(genericDataType, "organization_deleted", "OrganizationService", "onOrganizationDeleted");
             }
             "organization_renamed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "organization_renamed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "organization_renamed");
                 check self.executeRemoteFunc(genericDataType, "organization_renamed", "OrganizationService", "onOrganizationRenamed");
             }
             "organization_member_invited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "organization_member_invited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "organization_member_invited");
                 check self.executeRemoteFunc(genericDataType, "organization_member_invited", "OrganizationService", "onOrganizationMemberInvited");
             }
         }
@@ -1067,75 +1067,75 @@ service class DispatcherService {
     private function matchRemoteFuncForIssues(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "issues_reopened" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issues_reopened");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issues_reopened");
                 check self.executeRemoteFunc(genericDataType, "issues_reopened", "IssuesService", "onIssuesReopened");
             }
             "issues_transferred" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issues_transferred");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issues_transferred");
                 check self.executeRemoteFunc(genericDataType, "issues_transferred", "IssuesService", "onIssuesTransferred");
             }
             "issues_unpinned" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issues_unpinned");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issues_unpinned");
                 check self.executeRemoteFunc(genericDataType, "issues_unpinned", "IssuesService", "onIssuesUnpinned");
             }
             "issues_assigned" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issues_assigned");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issues_assigned");
                 check self.executeRemoteFunc(genericDataType, "issues_assigned", "IssuesService", "onIssuesAssigned");
             }
             "issues_milestoned" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issues_milestoned");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issues_milestoned");
                 check self.executeRemoteFunc(genericDataType, "issues_milestoned", "IssuesService", "onIssuesMilestoned");
             }
             "issues_labeled" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issues_labeled");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issues_labeled");
                 check self.executeRemoteFunc(genericDataType, "issues_labeled", "IssuesService", "onIssuesLabeled");
             }
             "issues_opened" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issues_opened");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issues_opened");
                 check self.executeRemoteFunc(genericDataType, "issues_opened", "IssuesService", "onIssuesOpened");
             }
             "issues_pinned" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issues_pinned");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issues_pinned");
                 check self.executeRemoteFunc(genericDataType, "issues_pinned", "IssuesService", "onIssuesPinned");
             }
             "issues_typed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issues_typed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issues_typed");
                 check self.executeRemoteFunc(genericDataType, "issues_typed", "IssuesService", "onIssuesTyped");
             }
             "issues_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issues_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issues_edited");
                 check self.executeRemoteFunc(genericDataType, "issues_edited", "IssuesService", "onIssuesEdited");
             }
             "issues_untyped" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issues_untyped");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issues_untyped");
                 check self.executeRemoteFunc(genericDataType, "issues_untyped", "IssuesService", "onIssuesUntyped");
             }
             "issues_demilestoned" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issues_demilestoned");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issues_demilestoned");
                 check self.executeRemoteFunc(genericDataType, "issues_demilestoned", "IssuesService", "onIssuesDemilestoned");
             }
             "issues_locked" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issues_locked");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issues_locked");
                 check self.executeRemoteFunc(genericDataType, "issues_locked", "IssuesService", "onIssuesLocked");
             }
             "issues_unassigned" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issues_unassigned");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issues_unassigned");
                 check self.executeRemoteFunc(genericDataType, "issues_unassigned", "IssuesService", "onIssuesUnassigned");
             }
             "issues_unlocked" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issues_unlocked");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issues_unlocked");
                 check self.executeRemoteFunc(genericDataType, "issues_unlocked", "IssuesService", "onIssuesUnlocked");
             }
             "issues_unlabeled" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issues_unlabeled");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issues_unlabeled");
                 check self.executeRemoteFunc(genericDataType, "issues_unlabeled", "IssuesService", "onIssuesUnlabeled");
             }
             "issues_closed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issues_closed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issues_closed");
                 check self.executeRemoteFunc(genericDataType, "issues_closed", "IssuesService", "onIssuesClosed");
             }
             "issues_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issues_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issues_deleted");
                 check self.executeRemoteFunc(genericDataType, "issues_deleted", "IssuesService", "onIssuesDeleted");
             }
         }
@@ -1144,11 +1144,11 @@ service class DispatcherService {
     private function matchRemoteFuncForRegistryPackage(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "registry_package_updated" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "registry_package_updated");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "registry_package_updated");
                 check self.executeRemoteFunc(genericDataType, "registry_package_updated", "RegistryPackageService", "onRegistryPackageUpdated");
             }
             "registry_package_published" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "registry_package_published");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "registry_package_published");
                 check self.executeRemoteFunc(genericDataType, "registry_package_published", "RegistryPackageService", "onRegistryPackagePublished");
             }
         }
@@ -1157,23 +1157,23 @@ service class DispatcherService {
     private function matchRemoteFuncForProjectsV2(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "projects_v2_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "projects_v2_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "projects_v2_created");
                 check self.executeRemoteFunc(genericDataType, "projects_v2_created", "ProjectsV2Service", "onProjectsV2Created");
             }
             "projects_v2_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "projects_v2_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "projects_v2_edited");
                 check self.executeRemoteFunc(genericDataType, "projects_v2_edited", "ProjectsV2Service", "onProjectsV2Edited");
             }
             "projects_v2_closed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "projects_v2_closed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "projects_v2_closed");
                 check self.executeRemoteFunc(genericDataType, "projects_v2_closed", "ProjectsV2Service", "onProjectsV2Closed");
             }
             "projects_v2_reopened" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "projects_v2_reopened");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "projects_v2_reopened");
                 check self.executeRemoteFunc(genericDataType, "projects_v2_reopened", "ProjectsV2Service", "onProjectsV2Reopened");
             }
             "projects_v2_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "projects_v2_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "projects_v2_deleted");
                 check self.executeRemoteFunc(genericDataType, "projects_v2_deleted", "ProjectsV2Service", "onProjectsV2Deleted");
             }
         }
@@ -1182,19 +1182,19 @@ service class DispatcherService {
     private function matchRemoteFuncForRepositoryVulnerabilityAlert(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "repository_vulnerability_alert_resolve" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "repository_vulnerability_alert_resolve");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "repository_vulnerability_alert_resolve");
                 check self.executeRemoteFunc(genericDataType, "repository_vulnerability_alert_resolve", "RepositoryVulnerabilityAlertService", "onRepositoryVulnerabilityAlertResolve");
             }
             "repository_vulnerability_alert_reopen" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "repository_vulnerability_alert_reopen");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "repository_vulnerability_alert_reopen");
                 check self.executeRemoteFunc(genericDataType, "repository_vulnerability_alert_reopen", "RepositoryVulnerabilityAlertService", "onRepositoryVulnerabilityAlertReopen");
             }
             "repository_vulnerability_alert_dismiss" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "repository_vulnerability_alert_dismiss");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "repository_vulnerability_alert_dismiss");
                 check self.executeRemoteFunc(genericDataType, "repository_vulnerability_alert_dismiss", "RepositoryVulnerabilityAlertService", "onRepositoryVulnerabilityAlertDismiss");
             }
             "repository_vulnerability_alert_create" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "repository_vulnerability_alert_create");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "repository_vulnerability_alert_create");
                 check self.executeRemoteFunc(genericDataType, "repository_vulnerability_alert_create", "RepositoryVulnerabilityAlertService", "onRepositoryVulnerabilityAlertCreate");
             }
         }
@@ -1203,11 +1203,11 @@ service class DispatcherService {
     private function matchRemoteFuncForStar(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "star_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "star_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "star_created");
                 check self.executeRemoteFunc(genericDataType, "star_created", "StarService", "onStarCreated");
             }
             "star_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "star_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "star_deleted");
                 check self.executeRemoteFunc(genericDataType, "star_deleted", "StarService", "onStarDeleted");
             }
         }
@@ -1216,7 +1216,7 @@ service class DispatcherService {
     private function matchRemoteFuncForCreate(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "create" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "create");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "create");
                 check self.executeRemoteFunc(genericDataType, "create", "CreateService", "onCreate");
             }
         }
@@ -1225,15 +1225,15 @@ service class DispatcherService {
     private function matchRemoteFuncForDeploymentReview(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "deployment_review_requested" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "deployment_review_requested");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "deployment_review_requested");
                 check self.executeRemoteFunc(genericDataType, "deployment_review_requested", "DeploymentReviewService", "onDeploymentReviewRequested");
             }
             "deployment_review_rejected" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "deployment_review_rejected");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "deployment_review_rejected");
                 check self.executeRemoteFunc(genericDataType, "deployment_review_rejected", "DeploymentReviewService", "onDeploymentReviewRejected");
             }
             "deployment_review_approved" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "deployment_review_approved");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "deployment_review_approved");
                 check self.executeRemoteFunc(genericDataType, "deployment_review_approved", "DeploymentReviewService", "onDeploymentReviewApproved");
             }
         }
@@ -1242,7 +1242,7 @@ service class DispatcherService {
     private function matchRemoteFuncForGollum(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "gollum" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "gollum");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "gollum");
                 check self.executeRemoteFunc(genericDataType, "gollum", "GollumService", "onGollum");
             }
         }
@@ -1251,7 +1251,7 @@ service class DispatcherService {
     private function matchRemoteFuncForGithubAppAuthorization(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "github_app_authorization_revoked" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "github_app_authorization_revoked");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "github_app_authorization_revoked");
                 check self.executeRemoteFunc(genericDataType, "github_app_authorization_revoked", "GithubAppAuthorizationService", "onGithubAppAuthorizationRevoked");
             }
         }
@@ -1260,7 +1260,7 @@ service class DispatcherService {
     private function matchRemoteFuncForWatch(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "watch_started" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "watch_started");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "watch_started");
                 check self.executeRemoteFunc(genericDataType, "watch_started", "WatchService", "onWatchStarted");
             }
         }
@@ -1269,23 +1269,23 @@ service class DispatcherService {
     private function matchRemoteFuncForTeam(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "team_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "team_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "team_created");
                 check self.executeRemoteFunc(genericDataType, "team_created", "TeamService", "onTeamCreated");
             }
             "team_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "team_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "team_deleted");
                 check self.executeRemoteFunc(genericDataType, "team_deleted", "TeamService", "onTeamDeleted");
             }
             "team_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "team_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "team_edited");
                 check self.executeRemoteFunc(genericDataType, "team_edited", "TeamService", "onTeamEdited");
             }
             "team_added_to_repository" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "team_added_to_repository");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "team_added_to_repository");
                 check self.executeRemoteFunc(genericDataType, "team_added_to_repository", "TeamService", "onTeamAddedToRepository");
             }
             "team_removed_from_repository" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "team_removed_from_repository");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "team_removed_from_repository");
                 check self.executeRemoteFunc(genericDataType, "team_removed_from_repository", "TeamService", "onTeamRemovedFromRepository");
             }
         }
@@ -1294,19 +1294,19 @@ service class DispatcherService {
     private function matchRemoteFuncForWorkflowJob(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "workflow_job_queued" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "workflow_job_queued");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "workflow_job_queued");
                 check self.executeRemoteFunc(genericDataType, "workflow_job_queued", "WorkflowJobService", "onWorkflowJobQueued");
             }
             "workflow_job_waiting" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "workflow_job_waiting");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "workflow_job_waiting");
                 check self.executeRemoteFunc(genericDataType, "workflow_job_waiting", "WorkflowJobService", "onWorkflowJobWaiting");
             }
             "workflow_job_completed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "workflow_job_completed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "workflow_job_completed");
                 check self.executeRemoteFunc(genericDataType, "workflow_job_completed", "WorkflowJobService", "onWorkflowJobCompleted");
             }
             "workflow_job_in_progress" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "workflow_job_in_progress");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "workflow_job_in_progress");
                 check self.executeRemoteFunc(genericDataType, "workflow_job_in_progress", "WorkflowJobService", "onWorkflowJobInProgress");
             }
         }
@@ -1315,31 +1315,31 @@ service class DispatcherService {
     private function matchRemoteFuncForRelease(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "release_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "release_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "release_created");
                 check self.executeRemoteFunc(genericDataType, "release_created", "ReleaseService", "onReleaseCreated");
             }
             "release_published" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "release_published");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "release_published");
                 check self.executeRemoteFunc(genericDataType, "release_published", "ReleaseService", "onReleasePublished");
             }
             "release_released" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "release_released");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "release_released");
                 check self.executeRemoteFunc(genericDataType, "release_released", "ReleaseService", "onReleaseReleased");
             }
             "release_prereleased" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "release_prereleased");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "release_prereleased");
                 check self.executeRemoteFunc(genericDataType, "release_prereleased", "ReleaseService", "onReleasePrereleased");
             }
             "release_unpublished" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "release_unpublished");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "release_unpublished");
                 check self.executeRemoteFunc(genericDataType, "release_unpublished", "ReleaseService", "onReleaseUnpublished");
             }
             "release_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "release_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "release_deleted");
                 check self.executeRemoteFunc(genericDataType, "release_deleted", "ReleaseService", "onReleaseDeleted");
             }
             "release_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "release_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "release_edited");
                 check self.executeRemoteFunc(genericDataType, "release_edited", "ReleaseService", "onReleaseEdited");
             }
         }
@@ -1348,23 +1348,23 @@ service class DispatcherService {
     private function matchRemoteFuncForInstallation(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "installation_new_permissions_accepted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "installation_new_permissions_accepted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "installation_new_permissions_accepted");
                 check self.executeRemoteFunc(genericDataType, "installation_new_permissions_accepted", "InstallationService", "onInstallationNewPermissionsAccepted");
             }
             "installation_suspend" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "installation_suspend");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "installation_suspend");
                 check self.executeRemoteFunc(genericDataType, "installation_suspend", "InstallationService", "onInstallationSuspend");
             }
             "installation_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "installation_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "installation_created");
                 check self.executeRemoteFunc(genericDataType, "installation_created", "InstallationService", "onInstallationCreated");
             }
             "installation_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "installation_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "installation_deleted");
                 check self.executeRemoteFunc(genericDataType, "installation_deleted", "InstallationService", "onInstallationDeleted");
             }
             "installation_unsuspend" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "installation_unsuspend");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "installation_unsuspend");
                 check self.executeRemoteFunc(genericDataType, "installation_unsuspend", "InstallationService", "onInstallationUnsuspend");
             }
         }
@@ -1373,7 +1373,7 @@ service class DispatcherService {
     private function matchRemoteFuncForCommitComment(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "commit_comment_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "commit_comment_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "commit_comment_created");
                 check self.executeRemoteFunc(genericDataType, "commit_comment_created", "CommitCommentService", "onCommitCommentCreated");
             }
         }
@@ -1382,15 +1382,15 @@ service class DispatcherService {
     private function matchRemoteFuncForDiscussionComment(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "discussion_comment_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "discussion_comment_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "discussion_comment_deleted");
                 check self.executeRemoteFunc(genericDataType, "discussion_comment_deleted", "DiscussionCommentService", "onDiscussionCommentDeleted");
             }
             "discussion_comment_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "discussion_comment_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "discussion_comment_created");
                 check self.executeRemoteFunc(genericDataType, "discussion_comment_created", "DiscussionCommentService", "onDiscussionCommentCreated");
             }
             "discussion_comment_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "discussion_comment_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "discussion_comment_edited");
                 check self.executeRemoteFunc(genericDataType, "discussion_comment_edited", "DiscussionCommentService", "onDiscussionCommentEdited");
             }
         }
@@ -1399,15 +1399,15 @@ service class DispatcherService {
     private function matchRemoteFuncForBranchProtectionRule(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "branch_protection_rule_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "branch_protection_rule_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "branch_protection_rule_deleted");
                 check self.executeRemoteFunc(genericDataType, "branch_protection_rule_deleted", "BranchProtectionRuleService", "onBranchProtectionRuleDeleted");
             }
             "branch_protection_rule_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "branch_protection_rule_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "branch_protection_rule_edited");
                 check self.executeRemoteFunc(genericDataType, "branch_protection_rule_edited", "BranchProtectionRuleService", "onBranchProtectionRuleEdited");
             }
             "branch_protection_rule_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "branch_protection_rule_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "branch_protection_rule_created");
                 check self.executeRemoteFunc(genericDataType, "branch_protection_rule_created", "BranchProtectionRuleService", "onBranchProtectionRuleCreated");
             }
         }
@@ -1416,19 +1416,19 @@ service class DispatcherService {
     private function matchRemoteFuncForIssueDependencies(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "issue_dependencies_blocking_removed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issue_dependencies_blocking_removed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issue_dependencies_blocking_removed");
                 check self.executeRemoteFunc(genericDataType, "issue_dependencies_blocking_removed", "IssueDependenciesService", "onIssueDependenciesBlockingRemoved");
             }
             "issue_dependencies_blocked_by_removed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issue_dependencies_blocked_by_removed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issue_dependencies_blocked_by_removed");
                 check self.executeRemoteFunc(genericDataType, "issue_dependencies_blocked_by_removed", "IssueDependenciesService", "onIssueDependenciesBlockedByRemoved");
             }
             "issue_dependencies_blocking_added" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issue_dependencies_blocking_added");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issue_dependencies_blocking_added");
                 check self.executeRemoteFunc(genericDataType, "issue_dependencies_blocking_added", "IssueDependenciesService", "onIssueDependenciesBlockingAdded");
             }
             "issue_dependencies_blocked_by_added" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "issue_dependencies_blocked_by_added");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "issue_dependencies_blocked_by_added");
                 check self.executeRemoteFunc(genericDataType, "issue_dependencies_blocked_by_added", "IssueDependenciesService", "onIssueDependenciesBlockedByAdded");
             }
         }
@@ -1437,39 +1437,39 @@ service class DispatcherService {
     private function matchRemoteFuncForRepository(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "repository_privatized" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "repository_privatized");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "repository_privatized");
                 check self.executeRemoteFunc(genericDataType, "repository_privatized", "RepositoryService", "onRepositoryPrivatized");
             }
             "repository_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "repository_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "repository_created");
                 check self.executeRemoteFunc(genericDataType, "repository_created", "RepositoryService", "onRepositoryCreated");
             }
             "repository_renamed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "repository_renamed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "repository_renamed");
                 check self.executeRemoteFunc(genericDataType, "repository_renamed", "RepositoryService", "onRepositoryRenamed");
             }
             "repository_transferred" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "repository_transferred");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "repository_transferred");
                 check self.executeRemoteFunc(genericDataType, "repository_transferred", "RepositoryService", "onRepositoryTransferred");
             }
             "repository_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "repository_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "repository_edited");
                 check self.executeRemoteFunc(genericDataType, "repository_edited", "RepositoryService", "onRepositoryEdited");
             }
             "repository_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "repository_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "repository_deleted");
                 check self.executeRemoteFunc(genericDataType, "repository_deleted", "RepositoryService", "onRepositoryDeleted");
             }
             "repository_archived" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "repository_archived");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "repository_archived");
                 check self.executeRemoteFunc(genericDataType, "repository_archived", "RepositoryService", "onRepositoryArchived");
             }
             "repository_publicized" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "repository_publicized");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "repository_publicized");
                 check self.executeRemoteFunc(genericDataType, "repository_publicized", "RepositoryService", "onRepositoryPublicized");
             }
             "repository_unarchived" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "repository_unarchived");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "repository_unarchived");
                 check self.executeRemoteFunc(genericDataType, "repository_unarchived", "RepositoryService", "onRepositoryUnarchived");
             }
         }
@@ -1478,15 +1478,15 @@ service class DispatcherService {
     private function matchRemoteFuncForPullRequestReviewComment(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "pull_request_review_comment_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_review_comment_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_review_comment_created");
                 check self.executeRemoteFunc(genericDataType, "pull_request_review_comment_created", "PullRequestReviewCommentService", "onPullRequestReviewCommentCreated");
             }
             "pull_request_review_comment_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_review_comment_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_review_comment_deleted");
                 check self.executeRemoteFunc(genericDataType, "pull_request_review_comment_deleted", "PullRequestReviewCommentService", "onPullRequestReviewCommentDeleted");
             }
             "pull_request_review_comment_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_review_comment_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_review_comment_edited");
                 check self.executeRemoteFunc(genericDataType, "pull_request_review_comment_edited", "PullRequestReviewCommentService", "onPullRequestReviewCommentEdited");
             }
         }
@@ -1495,7 +1495,7 @@ service class DispatcherService {
     private function matchRemoteFuncForDeploymentProtectionRule(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "deployment_protection_rule" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "deployment_protection_rule");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "deployment_protection_rule");
                 check self.executeRemoteFunc(genericDataType, "deployment_protection_rule", "DeploymentProtectionRuleService", "onDeploymentProtectionRule");
             }
         }
@@ -1504,7 +1504,7 @@ service class DispatcherService {
     private function matchRemoteFuncForCustomPropertyValues(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "custom_property_values_updated" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "custom_property_values_updated");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "custom_property_values_updated");
                 check self.executeRemoteFunc(genericDataType, "custom_property_values_updated", "CustomPropertyValuesService", "onCustomPropertyValuesUpdated");
             }
         }
@@ -1513,11 +1513,11 @@ service class DispatcherService {
     private function matchRemoteFuncForInstallationRepositories(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "installation_repositories_removed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "installation_repositories_removed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "installation_repositories_removed");
                 check self.executeRemoteFunc(genericDataType, "installation_repositories_removed", "InstallationRepositoriesService", "onInstallationRepositoriesRemoved");
             }
             "installation_repositories_added" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "installation_repositories_added");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "installation_repositories_added");
                 check self.executeRemoteFunc(genericDataType, "installation_repositories_added", "InstallationRepositoriesService", "onInstallationRepositoriesAdded");
             }
         }
@@ -1526,7 +1526,7 @@ service class DispatcherService {
     private function matchRemoteFuncForSecretScanningScan(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "secret_scanning_scan" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "secret_scanning_scan");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "secret_scanning_scan");
                 check self.executeRemoteFunc(genericDataType, "secret_scanning_scan", "SecretScanningScanService", "onSecretScanningScan");
             }
         }
@@ -1535,23 +1535,23 @@ service class DispatcherService {
     private function matchRemoteFuncForProjectCard(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "project_card_edited" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "project_card_edited");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "project_card_edited");
                 check self.executeRemoteFunc(genericDataType, "project_card_edited", "ProjectCardService", "onProjectCardEdited");
             }
             "project_card_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "project_card_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "project_card_deleted");
                 check self.executeRemoteFunc(genericDataType, "project_card_deleted", "ProjectCardService", "onProjectCardDeleted");
             }
             "project_card_moved" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "project_card_moved");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "project_card_moved");
                 check self.executeRemoteFunc(genericDataType, "project_card_moved", "ProjectCardService", "onProjectCardMoved");
             }
             "project_card_converted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "project_card_converted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "project_card_converted");
                 check self.executeRemoteFunc(genericDataType, "project_card_converted", "ProjectCardService", "onProjectCardConverted");
             }
             "project_card_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "project_card_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "project_card_created");
                 check self.executeRemoteFunc(genericDataType, "project_card_created", "ProjectCardService", "onProjectCardCreated");
             }
         }
@@ -1560,19 +1560,19 @@ service class DispatcherService {
     private function matchRemoteFuncForCheckRun(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "check_run_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "check_run_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "check_run_created");
                 check self.executeRemoteFunc(genericDataType, "check_run_created", "CheckRunService", "onCheckRunCreated");
             }
             "check_run_completed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "check_run_completed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "check_run_completed");
                 check self.executeRemoteFunc(genericDataType, "check_run_completed", "CheckRunService", "onCheckRunCompleted");
             }
             "check_run_requested_action" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "check_run_requested_action");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "check_run_requested_action");
                 check self.executeRemoteFunc(genericDataType, "check_run_requested_action", "CheckRunService", "onCheckRunRequestedAction");
             }
             "check_run_rerequested" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "check_run_rerequested");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "check_run_rerequested");
                 check self.executeRemoteFunc(genericDataType, "check_run_rerequested", "CheckRunService", "onCheckRunRerequested");
             }
         }
@@ -1581,7 +1581,7 @@ service class DispatcherService {
     private function matchRemoteFuncForPageBuild(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "page_build" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "page_build");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "page_build");
                 check self.executeRemoteFunc(genericDataType, "page_build", "PageBuildService", "onPageBuild");
             }
         }
@@ -1590,19 +1590,19 @@ service class DispatcherService {
     private function matchRemoteFuncForCustomProperty(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "custom_property_updated" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "custom_property_updated");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "custom_property_updated");
                 check self.executeRemoteFunc(genericDataType, "custom_property_updated", "CustomPropertyService", "onCustomPropertyUpdated");
             }
             "custom_property_deleted" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "custom_property_deleted");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "custom_property_deleted");
                 check self.executeRemoteFunc(genericDataType, "custom_property_deleted", "CustomPropertyService", "onCustomPropertyDeleted");
             }
             "custom_property_promote_to_enterprise" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "custom_property_promote_to_enterprise");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "custom_property_promote_to_enterprise");
                 check self.executeRemoteFunc(genericDataType, "custom_property_promote_to_enterprise", "CustomPropertyService", "onCustomPropertyPromoteToEnterprise");
             }
             "custom_property_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "custom_property_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "custom_property_created");
                 check self.executeRemoteFunc(genericDataType, "custom_property_created", "CustomPropertyService", "onCustomPropertyCreated");
             }
         }
@@ -1611,35 +1611,35 @@ service class DispatcherService {
     private function matchRemoteFuncForDependabotAlert(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "dependabot_alert_auto_dismissed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "dependabot_alert_auto_dismissed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "dependabot_alert_auto_dismissed");
                 check self.executeRemoteFunc(genericDataType, "dependabot_alert_auto_dismissed", "DependabotAlertService", "onDependabotAlertAutoDismissed");
             }
             "dependabot_alert_auto_reopened" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "dependabot_alert_auto_reopened");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "dependabot_alert_auto_reopened");
                 check self.executeRemoteFunc(genericDataType, "dependabot_alert_auto_reopened", "DependabotAlertService", "onDependabotAlertAutoReopened");
             }
             "dependabot_alert_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "dependabot_alert_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "dependabot_alert_created");
                 check self.executeRemoteFunc(genericDataType, "dependabot_alert_created", "DependabotAlertService", "onDependabotAlertCreated");
             }
             "dependabot_alert_dismissed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "dependabot_alert_dismissed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "dependabot_alert_dismissed");
                 check self.executeRemoteFunc(genericDataType, "dependabot_alert_dismissed", "DependabotAlertService", "onDependabotAlertDismissed");
             }
             "dependabot_alert_reopened" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "dependabot_alert_reopened");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "dependabot_alert_reopened");
                 check self.executeRemoteFunc(genericDataType, "dependabot_alert_reopened", "DependabotAlertService", "onDependabotAlertReopened");
             }
             "dependabot_alert_reintroduced" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "dependabot_alert_reintroduced");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "dependabot_alert_reintroduced");
                 check self.executeRemoteFunc(genericDataType, "dependabot_alert_reintroduced", "DependabotAlertService", "onDependabotAlertReintroduced");
             }
             "dependabot_alert_assignees_changed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "dependabot_alert_assignees_changed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "dependabot_alert_assignees_changed");
                 check self.executeRemoteFunc(genericDataType, "dependabot_alert_assignees_changed", "DependabotAlertService", "onDependabotAlertAssigneesChanged");
             }
             "dependabot_alert_fixed" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "dependabot_alert_fixed");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "dependabot_alert_fixed");
                 check self.executeRemoteFunc(genericDataType, "dependabot_alert_fixed", "DependabotAlertService", "onDependabotAlertFixed");
             }
         }
@@ -1648,7 +1648,7 @@ service class DispatcherService {
     private function matchRemoteFuncForDeploymentStatus(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "deployment_status_created" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "deployment_status_created");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "deployment_status_created");
                 check self.executeRemoteFunc(genericDataType, "deployment_status_created", "DeploymentStatusService", "onDeploymentStatusCreated");
             }
         }
@@ -1657,11 +1657,11 @@ service class DispatcherService {
     private function matchRemoteFuncForRepositoryAdvisory(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "repository_advisory_reported" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "repository_advisory_reported");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "repository_advisory_reported");
                 check self.executeRemoteFunc(genericDataType, "repository_advisory_reported", "RepositoryAdvisoryService", "onRepositoryAdvisoryReported");
             }
             "repository_advisory_published" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "repository_advisory_published");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "repository_advisory_published");
                 check self.executeRemoteFunc(genericDataType, "repository_advisory_published", "RepositoryAdvisoryService", "onRepositoryAdvisoryPublished");
             }
         }
@@ -1670,11 +1670,11 @@ service class DispatcherService {
     private function matchRemoteFuncForPullRequestReviewThread(GenericDataType genericDataType, string eventIdentifier, string eventType) returns error? {
         match eventIdentifier {
             "pull_request_review_thread_unresolved" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_review_thread_unresolved");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_review_thread_unresolved");
                 check self.executeRemoteFunc(genericDataType, "pull_request_review_thread_unresolved", "PullRequestReviewThreadService", "onPullRequestReviewThreadUnresolved");
             }
             "pull_request_review_thread_resolved" => {
-                log:printInfo("MATCH_LEVEL_2_ghtrigger_fresh_regen_v2", matchedEvent = "pull_request_review_thread_resolved");
+                log:printInfo("MATCH_LEVEL_2_github", matchedEvent = "pull_request_review_thread_resolved");
                 check self.executeRemoteFunc(genericDataType, "pull_request_review_thread_resolved", "PullRequestReviewThreadService", "onPullRequestReviewThreadResolved");
             }
         }
@@ -1683,7 +1683,7 @@ service class DispatcherService {
     private function executeRemoteFunc(GenericDataType genericEvent, string eventName, string serviceTypeStr, string eventFunction) returns error? {
         GenericServiceType? genericService = self.services[serviceTypeStr];
         if genericService is GenericServiceType {
-            log:printInfo("HANDLER_EXECUTED_ghtrigger_fresh_regen_v2", eventName = eventName);
+            log:printInfo("HANDLER_EXECUTED_github", eventName = eventName);
             check self.nativeHandler.invokeRemoteFunction(genericEvent, eventName, eventFunction, genericService);
         }
     }
