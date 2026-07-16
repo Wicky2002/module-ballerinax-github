@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Added GitHub webhook trigger support (`Listener`, event services, and payload types) alongside the existing REST API client
+
 ### Breaking Changes
 - [[#8642](https://github.com/ballerina-platform/ballerina-library/issues/8642)] Regenerated the connector from the aligned OpenAPI specification
   - Record field names now use camelCase with `@jsondata:Name` annotations for JSON mapping (e.g., `created_at` -> `createdAt`, `body_html` -> `bodyHtml`)
