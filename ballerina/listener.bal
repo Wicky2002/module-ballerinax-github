@@ -203,8 +203,10 @@ public class Listener {
             return "DeploymentStatusService";
         } else if serviceRef is RepositoryAdvisoryService {
             return "RepositoryAdvisoryService";
-        } else {
+        } else if serviceRef is PullRequestReviewThreadService {
             return "PullRequestReviewThreadService";
+        } else {
+            panic error("Unrecognized service type attached to the listener");
         }
     }
 }
